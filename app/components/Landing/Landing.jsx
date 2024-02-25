@@ -39,7 +39,7 @@ const Landing = () => {
 
         <a className={styles.reference} href="#">
           <p>View References</p>
-          <Image src="/Reference.svg" width={8} height={16} alt="arrow icon" />
+          <Image src="/reference.svg" width={8} height={16} alt="arrow icon" />
         </a>
       </div>
 
