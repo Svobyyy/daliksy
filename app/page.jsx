@@ -1,7 +1,9 @@
+import Landing from "./components/Landing/Landing";
+
 export default function Home() {
   return (
     <main>
-      <p>Dalisky's website</p>
+      <Landing />
     </main>
   );
 }
