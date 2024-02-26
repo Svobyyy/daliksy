@@ -4,8 +4,10 @@ import Image from "next/image";
 const Landing = () => {
   return (
     <section className={styles.landing}>
+
       <header className={styles.header}>
         <Image
+          className={styles.logo}
           src="/logo.png"
           width={187}
           height={22}
