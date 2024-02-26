@@ -25,6 +25,30 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+h3 {
+  display: inline;
+  background: linear-gradient(
+    135deg,
+    #ffffff 30%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  font-size: 40px;
+  font-weight: 400;
+  font-family: var(--font-segoe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Segoe UI;
+  line-height: 53px;
+  letter-spacing: -1.4px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
 p {
   font-size: 18px;
   font-weight: 400;
@@ -50,7 +74,7 @@ span {
 }
 
 .blue {
-  color: #00FFFC;
+  color: #00fffc;
 }
 
 a {

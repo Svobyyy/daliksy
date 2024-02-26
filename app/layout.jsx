@@ -10,9 +10,9 @@ const druk = localFont({
 });
 
 const segoe = localFont({
-  src: "./fonts/Druk-Wide-Bold.ttf",
+  src: "./fonts/Segoe-UI.ttf",
   display: "swap",
-  variable: "Segoe-UI.ttf",
+  variable: "--font-segoe",
   subsets: ["latin"],
 });
 
