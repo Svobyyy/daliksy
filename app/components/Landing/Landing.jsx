@@ -44,13 +44,7 @@ const Landing = () => {
           <Image src="/reference.svg" width={8} height={16} alt="arrow icon" />
         </a>
       </div>
-
-      <Image
-        src="/landing.svg"
-        alt="landing background"
-        priority
-        fill
-      />
+      
     </section>
   );
 };
