@@ -99,6 +99,100 @@ a {
   color: inherit;
 }
 
+input {
+  background: #060606;
+  border: 1px solid #caecf11a;
+  height: 78px;
+  max-width: 349px;
+  width: 100vw;
+  border-radius: 24px;
+  font-size: 18px;
+  padding-left: 38px;
+  line-height: 27px;
+  color: inherit;
+}
+
+label {
+  font-family: var(--font-druk);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #ffffffb1;
+}
+
+footer {
+  position: relative;
+  border-top: 1px solid #c7d6fe20;
+  height: 377px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  padding-left: 260px;
+  overflow: hidden;
+}
+
+footer::after {
+  content: "";
+  max-width: 700px;
+  width: 90%;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(143, 143, 143, 0.67) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding-left: 260px;
+
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+footer::before {
+  content: "";
+  max-width: 500px;
+  left: 0;
+  top: 0;
+  transform: translateY(-80px);
+  height: 200px;
+  width: 100%;
+  background: radial-gradient(
+    70.71% 70.71% at 50% 50%,
+    rgba(200, 200, 200, 0.1) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  filter: blur(1.2px);
+  margin-left: 150px;
+  position: absolute;
+}
+
+footer p {
+  color: #eff5ffb1;
+  font-size: 20px;
+  line-height: 16px;
+}
+
+@media only screen and (max-width: 1100px) {
+
+  footer {
+    padding-left: 0px;
+    align-items: center;
+  }
+
+  footer::before {
+    margin-left: 0px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, calc(-50% - 120px))
+  } 
+  
+}
+
 @media only screen and (max-width: 750px) {
   h1 {
     font-size: 48px;
