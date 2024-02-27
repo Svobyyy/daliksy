@@ -85,9 +85,15 @@
     gap: 40px;
   }
 
+  .reverse {
+    flex-direction: column-reverse;
+  }
+
+
   .card {
     width: 100%;
   }
+  
 }
 
 @media only screen and (max-width: 400px) {

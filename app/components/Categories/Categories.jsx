@@ -21,15 +21,15 @@ const Categories = () => {
         </p>
       </div>
 
-      <div className={styles.category}>
-        <div className={styles.card}>
-          <h2>VIDEO EDITING</h2>
-        </div>
+      <div className={`${styles.category} ${styles.reverse}`}>
         <p>
           We elevate your videos with expert editing. From fine-tuning to adding
           flair, we make your content stand out. Let us bring your vision to
           life – your story, our edit.
         </p>
+        <div className={styles.card}>
+          <h2>VIDEO EDITING</h2>
+        </div>
       </div>
 
       <div className={styles.category}>
