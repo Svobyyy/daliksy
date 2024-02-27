@@ -1,14 +1,16 @@
 .categories {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 100px;
-  padding: 120px 0px;
+  padding: 120px 20px;
 }
 
 .category {
   display: flex;
   justify-content: center;
   gap: 100px;
+  cursor: pointer;
 }
 
 .card {
@@ -16,7 +18,8 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 506px;
+  max-width: 506px;
+  width: 100vw;
   height: 176px;
   border-radius: 24px;
   background-color: black;
@@ -24,7 +27,7 @@
 }
 
 .category:hover .card {
-  border: 0px;
+  border: 1px solid transparent;
 }
 
 .card::after {
@@ -65,4 +68,31 @@
   -webkit-text-fill-color: transparent;
   max-width: 498px;
   width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .category p {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .category {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .category h2 {
+    font-size: 26px;
+    padding: 0px 3px;
+  }
 }
