@@ -37,6 +37,7 @@ const Reference = () => {
             alt="Arrow for clients"
           />
 
+
           <div className={`${styles.channel} ${styles.channel_opacity}`}>
             <Image
               src="/channels/revenge.png"
