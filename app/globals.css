@@ -25,6 +25,23 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+h2 {
+  display: inline-flex;
+  font-family: var(--font-druk);
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -1.8px;
+  text-align: center;
+  background: linear-gradient(
+    95.84deg,
+    rgba(255, 255, 255, 0.27) 32.01%,
+    rgba(255, 255, 255, 0.69) 55%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 h3 {
   display: inline;
   background: linear-gradient(
