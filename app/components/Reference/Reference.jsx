@@ -10,6 +10,7 @@ const Reference = () => {
 
       <div >
         <div className={styles.reference_main}>
+          
           <div className={styles.channel}>
             <Image
               src="/channels/revenge.png"
