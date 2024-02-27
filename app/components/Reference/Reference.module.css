@@ -8,6 +8,10 @@
   position: relative;
 }
 
+.reference h3 {
+  height: fit-content
+}
+
 .reference::after {
   content: "";
   max-width: 700px;
