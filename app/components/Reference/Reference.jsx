@@ -6,12 +6,6 @@ import Image from "next/image";
 
 const clients = [
   {
-    name: "Revenge",
-    instagram: "1,327,069",
-    youtube: "1,327,069",
-    image: "revenge.png",
-  },
-  {
     name: "Jarvis",
     tiktok: "3M+",
     instagram: "2M+",
