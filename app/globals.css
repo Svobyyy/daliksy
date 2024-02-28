@@ -193,6 +193,23 @@ footer p {
   
 }
 
+form {
+  margin: 0px 20px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+  input {
+    max-width: 723px;
+    width: 90vw;
+  }
+}
+
+
+
+
 @media only screen and (max-width: 750px) {
   h1 {
     font-size: 48px;

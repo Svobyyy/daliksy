@@ -6,21 +6,14 @@ const Footer = () => {
     <footer>
       <p>Dupscaled ® 2024</p>
       <div className={styles.socials}>
-        <div className={styles.socail}>
+        <a className={styles.socail} href="https://www.twitter.com/dupscaled" target="_blank">
           <Image src={"/socials/twitter.svg"} width={19} height={19} />
-        </div>
+        </a>
 
-        <div className={styles.socail}>
+        <a className={styles.socail} href="https://www.instagram.com/@dupscaledagency" target="_blank">
           <Image src={"/socials/instagram.svg"} width={19} height={19} />
-        </div>
+        </a>
 
-        <div className={styles.socail}>
-          <Image src={"/socials/linkedin.svg"} width={19} height={19} />
-        </div>
-
-        <div className={styles.socail}>
-          <Image src={"/socials/discord.svg"} width={19} height={19} />
-        </div>
       </div>
     </footer>
   );

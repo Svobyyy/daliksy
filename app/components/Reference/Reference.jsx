@@ -8,9 +8,8 @@ const Reference = () => {
         Trusted by superstars all<br></br> around the world
       </h3>
 
-      <div >
+      <div>
         <div className={styles.reference_main}>
-          
           <div className={styles.channel}>
             <Image
               src="/channels/revenge.png"
@@ -36,7 +35,6 @@ const Reference = () => {
             height={53}
             alt="Arrow for clients"
           />
-
 
           <div className={`${styles.channel} ${styles.channel_opacity}`}>
             <Image
@@ -77,7 +75,9 @@ const Reference = () => {
           </div>
         </div>
 
-        <p className={styles.reference_side}>*Client highlights, contact us for a full client list.</p>
+        <p className={styles.reference_side}>
+          *Client highlights, contact us for a full client list.
+        </p>
       </div>
 
       <div className={styles.radial} />
