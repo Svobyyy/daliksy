@@ -101,18 +101,18 @@ const Reference = () => {
 
           <div className={`${styles.channel} ${styles.channel_opacity}`}>
             <Image
-              src={`/channels/${clients[client].image}`}
+              src={`/channels/${clients.length === client + 1 ? clients[0].image : clients[client + 1].image}`}
               width={91}
               height={91}
               alt="Picture of the author"
             />
             <div className={styles.channel_info}>
-              <h4>{clients[client].name}</h4>
+              <h4>{clients.length === client + 1 ? clients[0].name : clients[client + 1].name}</h4>
               <p>
-                <b>{clients[client].instagram} </b>Instagram Followers
+                <b>{clients.length === client + 1 ? clients[0].instagram : clients[client + 1].instagram} </b>Instagram Followers
               </p>
               <p>
-                <b>{clients[client].youtube}</b> Youtube Subscribers
+                <b>{clients.length === client + 1 ? clients[0].youtube : clients[client + 1].youtube}</b> Youtube Subscribers
               </p>
             </div>
           </div>
@@ -121,25 +121,26 @@ const Reference = () => {
             className={`${styles.channel} ${styles.channel_opacityfix} ${styles.channel_opacity} `}
           >
             <Image
-              src={`/channels/${clients[client].image}`}
+              src={`/channels/${client === 0 ? clients[clients.length -1].image : clients[client - 1].image}`}
               width={91}
               height={91}
               alt="Picture of the author"
             />
             <div className={styles.channel_info}>
-              <h4>{clients[client].name}</h4>
+              <h4>{client === 0 ? clients[clients.length-1].name : clients[client - 1].name}</h4>
               <p>
-                <b>{clients[client].instagram} </b>Instagram Followers
+                <b>{client === 0 ? clients[clients.length-1].instagram : clients[client - 1].instagram} </b>Instagram Followers
               </p>
               <p>
-                <b>{clients[client].youtube}</b> Youtube Subscribers
+                <b>{client === 0 ? clients[clients.length-1].image : clients[client - 1].image}</b> Youtube Subscribers
               </p>
             </div>
           </div>
+          
         </div>
 
         <p className={styles.reference_side}>
-          *Client highlights, contact us for a full client list.
+          Client highlights, contact us for a full client list.
         </p>
       </div>
 
