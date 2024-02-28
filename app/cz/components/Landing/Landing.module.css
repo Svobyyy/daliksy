@@ -1,0 +1,107 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 0px 20px;
+  overflow: hidden;
+  background-image: url('/landing.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #434343;
+  gap: 20px;
+  max-width: 806px;
+  width: 90vw;
+  height: 68px;
+  padding: 0px 42px;
+  margin-top: 100px;
+  border-radius: 16px;
+  box-shadow: 0px 10px 10px -3.75px #00000004,
+    0px 2.288530111312866px 2.288530111312866px -2.5px #0000000b,
+    0px 0.6021869778633118px 0.6021869778633118px -1.25px #0000000d;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav p {
+  font-size: 14px;
+}
+
+.landing h1 {
+  margin-top: 170px;
+  margin-bottom: 55px;
+}
+
+.language {
+  width: 73px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #18181880;
+  font-size: 14px;
+}
+
+.language p {
+  color: #292929;
+  cursor: pointer;
+}
+
+.main_text {
+  color: #eff5ffb1;
+  max-width: 869px;
+  text-align: center;
+}
+
+.reference {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 22px;
+  margin-top: 74px;
+  margin-bottom: 246px;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .header {
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    width: 187px;
+    height: auto;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

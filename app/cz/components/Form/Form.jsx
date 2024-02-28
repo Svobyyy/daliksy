@@ -4,11 +4,11 @@ import Image from "next/image";
 const Form = () => {
   return (
     <section className={styles.form}>
-      <h3>Let’s get in touch!</h3>
+      <h3>Spojme se</h3>
       <form>
         <div className={styles.form_upper}>
           <div className={styles.form_input}>
-            <label for="name">NAME</label>
+            <label for="name">JMÉNO</label>
             <input type="text" id="name" name="name" placeholder="Full name" />
           </div>
 
@@ -24,7 +24,7 @@ const Form = () => {
         </div>
 
         <div className={styles.form_input}>
-          <label for="message">MESSAGE</label>
+          <label for="message">ZPRÁVA</label>
           <textarea
             type="text"
             id="message"
@@ -38,7 +38,7 @@ const Form = () => {
           <Image src="/form.svg" width={362} height={34} />
 
           <button type="submit" value="Submit">
-            Send message
+            Odeslat zprávu
           </button>
         </div>
       </form>
@@ -50,8 +50,7 @@ const Form = () => {
         width={492}
       />
 
-      <div className={styles.glow}/>
-
+      <div className={styles.glow} />
     </section>
   );
 };
