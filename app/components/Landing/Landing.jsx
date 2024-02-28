@@ -16,7 +16,7 @@ const Landing = () => {
         />
 
         <nav className={styles.nav}>
-          <p>Contact</p>
+          <a href="">Contact</a>
 
           <div className={styles.language}>
             <p>
@@ -40,7 +40,7 @@ const Landing = () => {
           Book a free call
         </a>
 
-        <a className={styles.reference} href="#">
+        <a className={styles.reference} href="#references">
           <p>View References</p>
           <Image src="/reference.svg" width={8} height={16} alt="arrow icon" />
         </a>

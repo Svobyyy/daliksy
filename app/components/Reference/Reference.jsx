@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Reference = () => {
   return (
-    <section className={styles.reference}>
+    <section className={styles.reference} id="references">
       <h3>
         Trusted by superstars all<br></br> around the world
       </h3>

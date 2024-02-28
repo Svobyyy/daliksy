@@ -115,6 +115,11 @@ input {
   color: inherit;
 }
 
+input[type=text]:focus {
+  border: 1px solid white;
+}
+
+
 label {
   font-family: var(--font-druk);
   font-size: 14px;

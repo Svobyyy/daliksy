@@ -35,7 +35,7 @@
   gap: 22px;
 }
 
-.nav p {
+.nav p, .nav a {
   font-size: 14px;
 }
 
