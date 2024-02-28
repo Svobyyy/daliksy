@@ -33,6 +33,16 @@ const clients = [
     youtube: "1M+",
     image: "jon.png",
   },
+  {
+    name: "Gamdom",
+    description: "World's biggest on-line casino",
+    image: "gamdom.png",
+  },
+  {
+    name: "Jiri BJP Prochazka",
+    description: "Former UFC Light Heavyweight Champion",
+    image: "jiri.png",
+  },
 ];
 
 const Reference = () => {
@@ -55,22 +65,27 @@ const Reference = () => {
             />
             <div className={styles.channel_info}>
               <h4>{clients[client].name}</h4>
-              <p>
-                <b>{clients[client].instagram} </b>Instagram Followers
-              </p>
-              <p>
-                <b>{clients[client].youtube}</b> Youtube Subscribers
-              </p>
-              <span>Dupscaled since March of 2023.</span>
+
+              {clients[client].description ? (
+                <p>{clients[client].description}</p>
+              ) : (
+                <>
+                  <p>
+                    <b>{clients[client].instagram} </b>Instagram Followers
+                  </p>
+                  <p>
+                    <b>{clients[client].youtube}</b> Youtube Subscribers
+                  </p>
+                </>
+              )}
             </div>
           </div>
 
           <div
             className={styles.next}
             onClick={() => {
-              if(client + 1 === clients.length )
-              {
-                return  setClient(0);
+              if (client + 1 === clients.length) {
+                return setClient(0);
               }
               setClient(client + 1);
             }}
@@ -99,7 +114,6 @@ const Reference = () => {
               <p>
                 <b>{clients[client].youtube}</b> Youtube Subscribers
               </p>
-              <span>Dupscaled since March of 2023.</span>
             </div>
           </div>
 
@@ -120,7 +134,6 @@ const Reference = () => {
               <p>
                 <b>{clients[client].youtube}</b> Youtube Subscribers
               </p>
-              <span>Dupscaled since March of 2023.</span>
             </div>
           </div>
         </div>
