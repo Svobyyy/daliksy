@@ -1,11 +1,25 @@
 import styles from "./Form.module.css";
 import Image from "next/image";
+import { Resend } from "resend";
 
 const Form = () => {
+  async function sendEmail(e) {
+    "use server";
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
+    resend.emails.send({
+      from: "dupscaled@resend.dev",
+      to: "fugiasrecord@gmail.com",
+      subject: "Testuju jestli to funguje",
+      html: `${e.get("name")}, ${e.get("social")}, ${e.get("message")}`,
+    });
+  }
+
   return (
     <section className={styles.form}>
       <h3>Let’s get in touch!</h3>
-      <form>
+      <form action={sendEmail}>
         <div className={styles.form_upper}>
           <div className={styles.form_input}>
             <label for="name">NAME</label>
@@ -13,12 +27,12 @@ const Form = () => {
           </div>
 
           <div className={styles.form_input}>
-            <label for="email">EMAIL</label>
+            <label for="social">PRIMARY SOCIAL</label>
             <input
               type="text"
-              id="email"
-              name="email"
-              placeholder="test@gmail.com"
+              id="social"
+              name="social"
+              placeholder="https://twitter.com/dupscaled"
             />
           </div>
         </div>
@@ -50,8 +64,7 @@ const Form = () => {
         width={492}
       />
 
-      <div className={styles.glow}/>
-
+      <div className={styles.glow} />
     </section>
   );
 };
