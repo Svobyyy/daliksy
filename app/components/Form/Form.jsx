@@ -40,7 +40,7 @@ const Form = () => {
               type="text"
               id="email"
               name="email"
-              placeholder="https://twitter.com/dupscaled"
+              placeholder="youremail@gmail.com"
               required
             />
           </div>
