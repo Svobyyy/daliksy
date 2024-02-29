@@ -105,27 +105,40 @@
 }
 
 .submit .sent {
+  transition: all 0.25s ease-in-out;
   color: white;
-  background-color: #006400;
-  border: none;
+  background-color: transparent;
+  border: 1px solid #D9D9D9
 }
 
+.submit:hover path {
+  fill: white;
+}
 
+.submit path {
+  transition: all 0.25s ease-in-out;
+}
+
+.sendingsvg {
+  fill: #00fffc80;
+}
+
+.sentsvg {
+  fill: #00fffc;
+}
 
 @media only screen and (max-width: 800px) {
-
   .form_upper {
     flex-direction: column;
   }
-  
+
   .message {
     width: 90vw;
   }
 }
 
 @media only screen and (max-width: 650px) {
-
-  .submit img {
+  .submit svg {
     display: none;
   }
 

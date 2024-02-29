@@ -36,6 +36,12 @@
   align-items: center;
   gap: 58px;
   position: relative;
+  animation-name: moving;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-direction: alternate;
 }
 
 .channel {
@@ -64,8 +70,6 @@
 .channel_info p:nth-of-type(1) {
   margin-top: 8px;
 }
-
-
 
 .radial {
   position: absolute;
@@ -106,6 +110,21 @@
   font-size: 18px;
   line-height: 27px;
   color: #eff5ff66;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+
 }
 
 @media only screen and (max-width: 1200px) {
