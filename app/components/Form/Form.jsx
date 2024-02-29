@@ -3,7 +3,6 @@
 import styles from "./Form.module.css";
 import Image from "next/image";
 import { useState } from "react";
-import { Resend } from "resend";
 import { SendEmail } from "./SendEmail";
 
 const Form = () => {
@@ -520,6 +519,7 @@ const Form = () => {
         src={"/formLogo.svg"}
         height={492}
         width={492}
+        alt="dupscaled logo"
       />
 
       <div className={styles.glow} />
