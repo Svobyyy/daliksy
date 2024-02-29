@@ -50,7 +50,7 @@
   background: #060606;
   border: 1px solid #caecf112;
   animation-name: moving;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
