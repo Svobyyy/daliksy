@@ -80,6 +80,10 @@
   margin-bottom: 246px;
 }
 
+.smalllogo {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   .header {
     margin-top: 30px;
@@ -98,8 +102,11 @@
 
 
   .logo {
-    width: 100px;
-    height: auto;
+    display: none;
+  }
+
+  .smalllogo {
+    display: inline-block;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -108,13 +115,6 @@
     margin-top: 40px;
   }
 
-
-  .header {
-    flex-direction: column;
-    height: 150px;
-    justify-content: center;
-    align-items: center;
-  }
 
   .logo {
     width: 187px;

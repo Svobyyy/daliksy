@@ -3,11 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Inline from "./Inline";
 
-
 const Landing = () => {
   return (
     <section className={styles.landing}>
-
       <Inline></Inline>
 
       <header className={styles.header}>
@@ -16,6 +14,14 @@ const Landing = () => {
           src="/logo.png"
           width={187}
           height={22}
+          alt="Logo of Dupscaled"
+        />
+
+        <Image
+          className={styles.smalllogo}
+          src="/mobilelogo.png"
+          width={50}
+          height={25}
           alt="Logo of Dupscaled"
         />
 
