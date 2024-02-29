@@ -2,6 +2,7 @@ import styles from "./Landing.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Inline from "./Inline";
+import Onbutton from "./onbutton";
 
 
 const Landing = () => {
@@ -47,6 +48,7 @@ const Landing = () => {
         >
           Book a free call
         </a>
+        <Onbutton></Onbutton>
 
         <a className={styles.reference} href="#references">
           <p>View References</p>
