@@ -5,14 +5,17 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function SendEmail(e) {
-
-    console.log("test")
+  console.log("test");
 
   await resend.emails.send({
     from: "dupscaled@resend.dev",
     to: "fugiasrecord@gmail.com",
     subject: "Testuju jestli to funguje",
-    html: `${e.get("name")}, ${e.get("email")}, ${e.get("message")}`,
+    html: (`
+        <h1>${e.get("name")}</h1>
+        <h2>${e.get("email")}</h2>
+        <p>${e.get("message")}</p>
+    `)
   });
 
   return true;
