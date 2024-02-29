@@ -1,10 +1,14 @@
 import styles from "./Landing.module.css";
 import Image from "next/image";
-import Link from 'next/link'
+import Link from "next/link";
+import Inline from "./Inline";
+
 
 const Landing = () => {
   return (
     <section className={styles.landing}>
+
+      <Inline></Inline>
 
       <header className={styles.header}>
         <Image
@@ -16,7 +20,7 @@ const Landing = () => {
         />
 
         <nav className={styles.nav}>
-          <a href="">Contact</a>
+          <a href="#form">Contact</a>
 
           <div className={styles.language}>
             <p>
@@ -36,7 +40,11 @@ const Landing = () => {
       </p>
 
       <div className={styles.buttons}>
-        <a className="button" href="#">
+        <a
+          className="button"
+          href="https://calendly.com/dupscaled/free-meeting"
+          target="blank_"
+        >
           Book a free call
         </a>
 
@@ -45,7 +53,6 @@ const Landing = () => {
           <Image src="/reference.svg" width={8} height={16} alt="arrow icon" />
         </a>
       </div>
-      
     </section>
   );
 };

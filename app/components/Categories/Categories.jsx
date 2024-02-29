@@ -34,7 +34,7 @@ const Categories = () => {
 
       <div className={styles.category}>
         <div className={styles.card}>
-          <h2>graphic design</h2>
+          <h2>GRAPHIC DESIGN</h2>
         </div>
         <p>
           Always boosting your brand with graphic design, that just stands out!

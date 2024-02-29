@@ -43,6 +43,17 @@ const clients = [
     description: "Former UFC Light Heavyweight Champion",
     image: "jiri.png",
   },
+  {
+    name: "Milad Mirg",
+    tiktok: "6.4M+",
+    youtube: "6.5M+",
+    image: "milad.png",
+  },
+  {
+    name: "The MAG",
+    description: "The biggest video magazine in the Czech Republic",
+    image: "mag.png",
+  },
 ];
 
 const Reference = () => {
@@ -70,12 +81,23 @@ const Reference = () => {
                 <p>{clients[client].description}</p>
               ) : (
                 <>
-                  <p>
-                    <b>{clients[client].instagram} </b>Instagram Followers
-                  </p>
-                  <p>
-                    <b>{clients[client].youtube}</b> Youtube Subscribers
-                  </p>
+                  {clients[client].tiktok && (
+                    <p>
+                      <b>{clients[client].tiktok} </b>Tiktok Followers
+                    </p>
+                  )}
+
+                  {clients[client].instagram && (
+                    <p>
+                      <b>{clients[client].instagram} </b>Instagram Followers
+                    </p>
+                  )}
+
+                  {clients[client].youtube && (
+                    <p>
+                      <b>{clients[client].youtube}</b> Youtube Subscribers
+                    </p>
+                  )}
                 </>
               )}
             </div>
@@ -101,18 +123,36 @@ const Reference = () => {
 
           <div className={`${styles.channel} ${styles.channel_opacity}`}>
             <Image
-              src={`/channels/${clients.length === client + 1 ? clients[0].image : clients[client + 1].image}`}
+              src={`/channels/${
+                clients.length === client + 1
+                  ? clients[0].image
+                  : clients[client + 1].image
+              }`}
               width={91}
               height={91}
               alt="Picture of the author"
             />
             <div className={styles.channel_info}>
-              <h4>{clients.length === client + 1 ? clients[0].name : clients[client + 1].name}</h4>
+              <h4>
+                {clients.length === client + 1
+                  ? clients[0].name
+                  : clients[client + 1].name}
+              </h4>
               <p>
-                <b>{clients.length === client + 1 ? clients[0].instagram : clients[client + 1].instagram} </b>Instagram Followers
+                <b>
+                  {clients.length === client + 1
+                    ? clients[0].instagram
+                    : clients[client + 1].instagram}{" "}
+                </b>
+                Instagram Followers
               </p>
               <p>
-                <b>{clients.length === client + 1 ? clients[0].youtube : clients[client + 1].youtube}</b> Youtube Subscribers
+                <b>
+                  {clients.length === client + 1
+                    ? clients[0].youtube
+                    : clients[client + 1].youtube}
+                </b>{" "}
+                Youtube Subscribers
               </p>
             </div>
           </div>
@@ -121,22 +161,50 @@ const Reference = () => {
             className={`${styles.channel} ${styles.channel_opacityfix} ${styles.channel_opacity} `}
           >
             <Image
-              src={`/channels/${client === 0 ? clients[clients.length -1].image : clients[client - 1].image}`}
+              src={`/channels/${
+                client === 0
+                  ? clients[clients.length - 1].image
+                  : clients[client - 1].image
+              }`}
               width={91}
               height={91}
               alt="Picture of the author"
             />
             <div className={styles.channel_info}>
-              <h4>{client === 0 ? clients[clients.length-1].name : clients[client - 1].name}</h4>
+              <h4>
+                {client === 0
+                  ? clients[clients.length - 1].name
+                  : clients[client - 1].name}
+              </h4>
+
               <p>
-                <b>{client === 0 ? clients[clients.length-1].instagram : clients[client - 1].instagram} </b>Instagram Followers
+                <b>
+                  {client === 0
+                    ? clients[clients.length - 1].tiktok
+                    : clients[client - 1].tiktok}
+                </b>
+                Tiktok Followers
               </p>
+
               <p>
-                <b>{client === 0 ? clients[clients.length-1].image : clients[client - 1].image}</b> Youtube Subscribers
+                <b>
+                  {client === 0
+                    ? clients[clients.length - 1].instagram
+                    : clients[client - 1].instagram}
+                </b>
+                Instagram Followers
+              </p>
+
+              <p>
+                <b>
+                  {client === 0
+                    ? clients[clients.length - 1].youtube
+                    : clients[client - 1].youtube}
+                </b>{" "}
+                Youtube Subscribers
               </p>
             </div>
           </div>
-          
         </div>
 
         <p className={styles.reference_side}>
