@@ -90,7 +90,7 @@
   }
 
   .landing h1 {
-    margin-top: 70px;
+    margin-top: 100px;
     margin-bottom: 70px;
   }
 
@@ -120,9 +120,6 @@
 }
 @media only screen and (max-width: 400px) {
 
-  .landing h1 {
-    margin-top: 40px;
-  }
 
 
   .logo {
