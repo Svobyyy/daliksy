@@ -191,4 +191,8 @@
   .channel_opacityfix {
     top: 150px;
   }
+
+  .reference {
+    padding-top: 100px;
+  }
 }
