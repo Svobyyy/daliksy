@@ -166,6 +166,7 @@
 
   .channel {
     width: 100%;
+    min-height: 220px;
   }
 }
 
