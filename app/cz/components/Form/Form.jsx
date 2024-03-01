@@ -509,7 +509,7 @@ const Form = () => {
             disabled={disable}
             className={sent ? styles.sent : undefined}
           >
-            {sent ? "Odesláno" : disable ? "Posílám" : "Pošlete zprávu"}
+            {sent ? "Odesláno" : disable ? "Posílám" : "Odeslat zprávu"}
           </button>
         </div>
       </form>
