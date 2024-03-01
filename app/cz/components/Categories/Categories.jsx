@@ -11,9 +11,9 @@ const Categories = () => {
           </h2>
         </div>
         <p>
-          vám usnadní život na sociálních sítích. Staráme se o vaše příspěvky,
-          komunikujeme s vaším publikem a zajišťujeme, aby vaše značka zůstala v
-          centru pozornosti.<br></br>
+          Dupscaled vám usnadní život na sociálních sítích. Staráme se o vaše
+          příspěvky, komunikujeme s vaším publikem a zajišťujeme, aby vaše
+          značka zůstala v centru pozornosti.<br></br>
           <br></br>Postaráme se o vše, od chytlavých titulků až po dokonalé
           načasování. Nechte nás, abychom svět sociálních sítí řídili za vás, a
           vy se tak můžete soustředit na to, co umíte nejlépe.

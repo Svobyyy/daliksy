@@ -40,11 +40,13 @@ const Landing = () => {
 
       <p className={styles.main_text}>
         <span className="blue">DUPSCALED</span> exceluje ve vytváření
-        vynikajících a zdokonalování značek díky svým znalostem sociálních sítí,
-        profesionálním střihem a designem. S globálními hvězdami jsme již 
-        <span> {" "}
-          dosáhli více než miliardy zhlédnutí. Připojte se k nám a
-          zvedněte svou online prezentaci na novou úroveň!
+        vynikajícího kontentu a zdokonalování značek díky svým znalostem
+        sociálních sítí, profesionálním střihem a designem. S globálními
+        hvězdami jsme již
+        <span>
+          {" "}
+          dosáhli více než miliardy zhlédnutí. Připojte se k nám a zvedněte svou
+          online prezentaci na novou úroveň!
         </span>
       </p>
 
