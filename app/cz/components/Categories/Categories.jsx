@@ -11,20 +11,21 @@ const Categories = () => {
           </h2>
         </div>
         <p>
-          DUPSCALED vám usnadní život na sociálních sítích. Staráme se o vaše
-          příspěvky, komunikujeme s vaším publikem a zajišťujeme, aby vaše
-          značka zůstala v centru pozornosti.<br></br>
-          <br></br>Postaráme se o vše, od chytlavých titulků až po dokonalé
-          načasování. Nechte nás, abychom svět sociálních sítí řídili za vás, a
-          vy se tak můžete soustředit na to, co umíte nejlépe.
+          At DUPSCALED, we make your life easier on social media. We handle your
+          posts, engage with your audience, and ensure your brand stays in the
+          spotlight.<br></br>
+          <br></br> From catchy captions to perfect timing, we've got it
+          covered. Let us navigate the social world for you, so you can focus on
+          what you do best. With DUPSCALED, your online success is just a post
+          away!
         </p>
       </div>
 
       <div className={`${styles.category} ${styles.reverse}`}>
         <p>
-          Vaše videa pozvedneme odborným střihem. Od jemného doladění až po
-          přidání stylu. Díky nám váš obsah vynikne. Nechte nás oživit vaši vizi
-          – váš příběh, náš střih.
+          We elevate your videos with expert editing. From fine-tuning to adding
+          flair, we make your content stand out. Let us bring your vision to
+          life – your story, our edit.
         </p>
         <div className={styles.card}>
           <h2>VIDEO EDITING</h2>
@@ -33,13 +34,12 @@ const Categories = () => {
 
       <div className={styles.category}>
         <div className={styles.card}>
-          <h2>graphic design</h2>
+          <h2>GRAPHIC DESIGN</h2>
         </div>
         <p>
-          Vždy podporujte svou značku grafickým designem, který prostě vynikne!
-          Náš kreativní tým proměňuje nápady v poutavé vizuály, od loga po
-          grafiku pro sociální média. Vyberte si nás pro design, který osloví
-          každého.
+          Always boosting your brand with graphic design, that just stands out!
+          Our creative team turns ideas into captivating visuals, from logos to
+          social media graphics. Choose us for design that speaks volumes.
         </p>
       </div>
     </section>

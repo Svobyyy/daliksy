@@ -6,7 +6,7 @@
   position: relative;
   padding: 0px 20px;
   overflow: hidden;
-  background-image: url('/landing.svg');
+  background-image: url("/landing.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,7 +35,8 @@
   gap: 22px;
 }
 
-.nav p {
+.nav p,
+.nav a {
   font-size: 14px;
 }
 
@@ -56,7 +57,7 @@
 }
 
 .language p {
-  color: #292929;
+  color: #777777;
   cursor: pointer;
 }
 
@@ -79,21 +80,47 @@
   margin-bottom: 246px;
 }
 
+.smalllogo {
+  display: none;
+}
 
+@media only screen and (max-width: 600px) {
+  .header {
+    margin-top: 30px;
+  }
+
+  .landing h1 {
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+
+  
+  .reference {
+    display: none;
+  }
+
+  .buttons {
+    margin-top: 40px;
+    margin-bottom: 90px;
+  }
+}
 
 @media only screen and (max-width: 500px) {
+
+
   .logo {
-    width: 100px;
-    height: auto;
+    display: none;
+  }
+
+
+
+  .smalllogo {
+    display: inline-block;
   }
 }
 @media only screen and (max-width: 400px) {
-  .header {
-    flex-direction: column;
-    height: 150px;
-    justify-content: center;
-    align-items: center;
-  }
+
+
 
   .logo {
     width: 187px;
@@ -104,4 +131,5 @@
     flex-direction: column;
     align-items: center;
   }
+
 }

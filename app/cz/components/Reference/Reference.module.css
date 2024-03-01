@@ -9,7 +9,7 @@
 }
 
 .reference h3 {
-  height: fit-content
+  height: fit-content;
 }
 
 .reference::after {
@@ -49,6 +49,12 @@
   border-radius: 24px;
   background: #060606;
   border: 1px solid #caecf112;
+  animation-name: moving;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-direction: alternate;
 }
 
 .channel_info p {
@@ -57,18 +63,12 @@
   font-weight: 400;
   line-height: 23px;
   color: #6b7280;
+  max-width: 210px;
+  width: 100%;
 }
 
 .channel_info p:nth-of-type(1) {
   margin-top: 8px;
-}
-
-.channel_info span {
-  font-size: 7px;
-  font-weight: 400;
-  line-height: 23px;
-  margin-top: 12px;
-  margin-left: 15px;
 }
 
 .radial {
@@ -95,9 +95,13 @@
   z-index: -1;
 }
 
-.channel_opacity:nth-of-type(2) {
+.channel_opacityfix {
   top: 110px;
   left: 206px;
+}
+
+.next {
+  cursor: pointer;
 }
 
 .reference_side {
@@ -106,6 +110,21 @@
   font-size: 18px;
   line-height: 27px;
   color: #eff5ff66;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -131,7 +150,7 @@
     right: 5%;
   }
 
-  .channel_opacity:nth-of-type(2) {
+  .channel_opacityfix {
     left: -5%;
   }
 
@@ -169,9 +188,11 @@
     height: 222px;
   }
 
-  .channel_opacity:nth-of-type(2) {
+  .channel_opacityfix {
     top: 150px;
   }
 
-
+  .reference {
+    padding-top: 100px;
+  }
 }
