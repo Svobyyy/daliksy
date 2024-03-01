@@ -9,7 +9,7 @@ export async function SendEmail(e) {
 
   await resend.emails.send({
     from: "dupscaled@resend.dev",
-    to: "fugiasrecord@gmail.com",
+    to: `${process.env.RESEND_EMAIL}`,
     subject: "Testuju jestli to funguje",
     html: (`
         <h1>${e.get("name")}</h1>
