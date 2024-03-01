@@ -51,9 +51,24 @@ const clients = [
   },
   {
     name: "The MAG",
-    description: "Největší video magazín v České Republice",
+    description: "Největší video magazín v České",
     image: "mag.png",
   },
+  {
+    name: "Risa Zelinka",
+    description: "Český koloběžkář",
+    image: "risa.png"
+  },
+  {
+    name: "Ninjas In Pyjamas",
+    description: "Jedna z největších herních organizací",
+    image: "ninjas.png"
+  },
+  {
+    name: "Nyhrox",
+    description: "Fortnite World Cup Vítěz",
+    image: "nyhrox.png"
+  }
 ];
 
 const Reference = () => {
