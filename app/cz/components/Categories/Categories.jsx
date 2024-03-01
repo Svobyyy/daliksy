@@ -6,7 +6,7 @@ const Categories = () => {
       <div className={styles.category}>
         <div className={styles.card}>
           <h2>
-            SPRÁVA SOCIÁLNÍCH <br />
+            SPRÁVAM<br/> SOCIÁLNÍCH <br />
             SÍŤÍ
           </h2>
         </div>
