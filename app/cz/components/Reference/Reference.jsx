@@ -35,12 +35,12 @@ const clients = [
   },
   {
     name: "Gamdom",
-    description: "World's biggest on-line casino",
+    description: "Největší online kasino kasino na světě",
     image: "gamdom.png",
   },
   {
     name: "Jiri BJP Prochazka",
-    description: "Former UFC Light Heavyweight Champion",
+    description: "Bývalý UFC Light Heavyweight Champion",
     image: "jiri.png",
   },
   {
@@ -51,7 +51,7 @@ const clients = [
   },
   {
     name: "The MAG",
-    description: "The biggest video magazine in the Czech Republic",
+    description: "Největší video magazín v České Republice",
     image: "mag.png",
   },
 ];
@@ -62,7 +62,7 @@ const Reference = () => {
   return (
     <section className={styles.reference} id="references">
       <h3>
-        Trusted by superstars all<br></br> around the world
+        Spolupracujeme s hvězdami <br></br> po celém světě
       </h3>
 
       <div>
@@ -83,19 +83,19 @@ const Reference = () => {
                 <>
                   {clients[client].tiktok && (
                     <p>
-                      <b>{clients[client].tiktok} </b>Tiktok Followers
+                      <b>{clients[client].tiktok} </b>Tiktok Followerů
                     </p>
                   )}
 
                   {clients[client].instagram && (
                     <p>
-                      <b>{clients[client].instagram} </b>Instagram Followers
+                      <b>{clients[client].instagram} </b>Instagram Followerů
                     </p>
                   )}
 
                   {clients[client].youtube && (
                     <p>
-                      <b>{clients[client].youtube}</b> Youtube Subscribers
+                      <b>{clients[client].youtube}</b> Youtube Odběratelů
                     </p>
                   )}
                 </>
@@ -144,7 +144,7 @@ const Reference = () => {
                     ? clients[0].instagram
                     : clients[client + 1].instagram}{" "}
                 </b>
-                Instagram Followers
+                Instagram Followerů
               </p>
               <p>
                 <b>
@@ -152,7 +152,7 @@ const Reference = () => {
                     ? clients[0].youtube
                     : clients[client + 1].youtube}
                 </b>{" "}
-                Youtube Subscribers
+                Youtube Odběratelů
               </p>
             </div>
           </div>
@@ -183,7 +183,7 @@ const Reference = () => {
                     ? clients[clients.length - 1].tiktok
                     : clients[client - 1].tiktok}
                 </b>
-                Tiktok Followers
+                Tiktok Followerů
               </p>
 
               <p>
@@ -192,7 +192,7 @@ const Reference = () => {
                     ? clients[clients.length - 1].instagram
                     : clients[client - 1].instagram}
                 </b>
-                Instagram Followers
+                Instagram Followerů
               </p>
 
               <p>
@@ -201,14 +201,14 @@ const Reference = () => {
                     ? clients[clients.length - 1].youtube
                     : clients[client - 1].youtube}
                 </b>{" "}
-                Youtube Subscribers
+                Youtube Odběratelů
               </p>
             </div>
           </div>
         </div>
 
         <p className={styles.reference_side}>
-          Client highlights, contact us for a full client list.
+          Ukázka klientů, kontaktujte nás pro celý seznam klientů.
         </p>
       </div>
 

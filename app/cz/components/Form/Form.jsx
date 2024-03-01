@@ -19,16 +19,16 @@ const Form = () => {
 
   return (
     <section className={styles.form} id="form">
-      <h3>Let’s get in touch!</h3>
+      <h3>Spojme se!</h3>
       <form action={checkForm}>
         <div className={styles.form_upper}>
           <div className={styles.form_input}>
-            <label htmlFor="name">NAME</label>
+            <label htmlFor="name">JMÉNO</label>
             <input
               type="text"
               id="name"
               name="name"
-              placeholder="Full name"
+              placeholder="Franta Špaček"
               required
             />
           </div>
@@ -39,20 +39,20 @@ const Form = () => {
               type="text"
               id="email"
               name="email"
-              placeholder="youremail@gmail.com"
+              placeholder="vášemail@gmail.com"
               required
             />
           </div>
         </div>
 
         <div className={styles.form_input}>
-          <label htmlFor="message">MESSAGE</label>
+          <label htmlFor="message">ZPRÁVA</label>
           <textarea
             type="text"
             id="message"
             name="message"
             className={styles.message}
-            placeholder="Type your inquiry here!"
+            placeholder="Zde napiš svůj dotaz!"
             required
           />
         </div>
@@ -509,7 +509,7 @@ const Form = () => {
             disabled={disable}
             className={sent ? styles.sent : undefined}
           >
-            {sent ? "Received" : disable ? "Sending" : "Send message"}
+            {sent ? "Odesláno" : disable ? "Posílám" : "Pošlete zprávu"}
           </button>
         </div>
       </form>

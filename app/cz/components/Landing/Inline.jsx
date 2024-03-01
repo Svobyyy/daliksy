@@ -17,7 +17,7 @@ const Inline = () => {
       <PopupWidget
         url="https://calendly.com/dupscaled/free-meeting"
         rootElement={rootElement}
-        text="Click here to schedule!"
+        text="Sjednat Schůzku"
         textColor="#ffffff"
         color="#00a2ff"
       />
