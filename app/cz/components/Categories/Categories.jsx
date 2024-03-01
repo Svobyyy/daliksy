@@ -6,8 +6,8 @@ const Categories = () => {
       <div className={styles.category}>
         <div className={styles.card}>
           <h2>
-            SPRÁVAM<br/> SOCIÁLNÍCH <br />
-            SÍŤÍ
+            SOCIAL MEDIA <br />
+            MANAGMENT
           </h2>
         </div>
         <p>
@@ -27,13 +27,13 @@ const Categories = () => {
           – váš příběh, náš střih.
         </p>
         <div className={styles.card}>
-          <h2>EDITACE VIDEÍ</h2>
+          <h2>VIDEO EDITING</h2>
         </div>
       </div>
 
       <div className={styles.category}>
         <div className={styles.card}>
-          <h2>GRAFICKÝ DESIGN</h2>
+          <h2>GRAPHIC DESIGN</h2>
         </div>
         <p>
           Vždy podporujte svou značku grafickým designem, který prostě vynikne!
