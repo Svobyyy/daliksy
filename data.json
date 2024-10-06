@@ -1,0 +1,38 @@
+{
+  "navbar": {
+    "en": "Contact",
+    "cz": "Kontakt"
+  },
+  "title": {
+    "en": "We are DUPSCALED",
+    "cz": "My jsme DUPSCALED"
+  },
+  "main_text": {
+    "en": [
+      { "type": "span", "className": "blue", "text": "DUPSCALED" },
+      {
+        "type": "text",
+        "text": " crafts standout brands through social mastery, expert editing, and stunning design. We've sparked "
+      },
+      { "type": "span", "text": "over a billion views" },
+      { "type": "text", "text": " for global stars. " },
+      { "type": "span", "text": "Join us to elevate your online presence." }
+    ],
+    "cz": [
+    { "type": "span", "className": "blue", "text": "DUPSCALED" },
+    { "type": "text", "text": " exceluje ve vytváření vynikajícího kontentu a zdokonalování značek díky svým znalostem sociálních sítí, profesionálním střihem a designem. S globálními hvězdami jsme již " },
+    {
+      "type": "span",
+      "text": "dosáhli více než miliardy zhlédnutí. Připojte se k nám a zvedněte svou online prezentaci na novou úroveň!"
+    }
+  ]
+  },
+  "main_book": {
+    "en": "Book a free call",
+    "cz": "Sjednat Schůzku"
+  },
+  "main_references": {
+    "en": "View References",
+    "cz": "Prohlédnout reference"
+  }
+}

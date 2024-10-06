@@ -3,7 +3,7 @@
 import { PopupWidget } from "react-calendly";
 import { useState, useEffect } from "react";
 
-const Inline = () => {
+const SchedulePopUp = () => {
   const [rootElement, setRootElement] = useState(null);
 
   useEffect(() => {
@@ -25,4 +25,4 @@ const Inline = () => {
   );
 };
 
-export default Inline;
+export default SchedulePopUp;

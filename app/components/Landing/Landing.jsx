@@ -1,49 +1,32 @@
 import styles from "./Landing.module.css";
 import Image from "next/image";
-import Link from "next/link";
-import Inline from "./Inline";
+import data from "@/data.json";
+import SchedulePopUp from "./SchedulePopUp";
+import Navbar from "../Navbar/Navbar";
 
-const Landing = () => {
+const renderText = (text) => {
+  return text.map((item, index) => {
+    if (item.type === "span") {
+      return (
+        <span key={index} className={item.className}>
+          {item.text}
+        </span>
+      );
+    }
+    return item.text;
+  });
+};
+
+const Landing = ({ language }) => {
+  const { main_text } = data;
+
   return (
     <section className={styles.landing}>
-      <Inline></Inline>
-
-      <header className={styles.header}>
-        <Image
-          className={styles.logo}
-          src="/logo.png"
-          width={187}
-          height={22}
-          alt="Logo of Dupscaled"
-        />
-
-        <Image
-          className={styles.smalllogo}
-          src="/mobilelogo.png"
-          width={50}
-          height={25}
-          alt="Logo of Dupscaled"
-        />
-
-        <nav className={styles.nav}>
-          <a href="#form">Contact</a>
-
-          <div className={styles.language}>
-            <p>
-              <span className="blue">ENG</span>/<Link href="/cz">CZ</Link>
-            </p>
-          </div>
-        </nav>
-      </header>
-
+      <SchedulePopUp />
+      <Navbar language={language} />
       <h1>We are DUPSCALED</h1>
 
-      <p className={styles.main_text}>
-        <span className="blue">DUPSCALED</span> crafts standout brands through
-        social mastery, expert editing, and stunning design. We've sparked
-        <span> over a billion views </span> for global stars.
-        <span> Join us to elevate your online presence.</span>
-      </p>
+      <p className={styles.main_text}>{renderText(main_text[language])}</p>
 
       <div className={styles.buttons}>
         <a

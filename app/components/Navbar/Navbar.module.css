@@ -1,17 +1,3 @@
-.landing {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  padding: 0px 20px;
-  overflow: hidden;
-  background-image: url("/landing.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -63,7 +49,7 @@
 
 .main_text {
   color: #eff5ffb1;
-  max-width: 878px;
+  max-width: 869px;
   text-align: center;
 }
 
@@ -82,6 +68,10 @@
 
 .smalllogo {
   display: none;
+}
+
+.activeLanguage {
+  color: #00fffc;
 }
 
 @media only screen and (max-width: 600px) {
