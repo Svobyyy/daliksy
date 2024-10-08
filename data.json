@@ -19,13 +19,16 @@
       { "type": "span", "text": "Join us to elevate your online presence." }
     ],
     "cz": [
-    { "type": "span", "className": "blue", "text": "DUPSCALED" },
-    { "type": "text", "text": " exceluje ve vytváření vynikajícího kontentu a zdokonalování značek díky svým znalostem sociálních sítí, profesionálním střihem a designem. S globálními hvězdami jsme již " },
-    {
-      "type": "span",
-      "text": "dosáhli více než miliardy zhlédnutí. Připojte se k nám a zvedněte svou online prezentaci na novou úroveň!"
-    }
-  ]
+      { "type": "span", "className": "blue", "text": "DUPSCALED" },
+      {
+        "type": "text",
+        "text": " exceluje ve vytváření vynikajícího kontentu a zdokonalování značek díky svým znalostem sociálních sítí, profesionálním střihem a designem. S globálními hvězdami jsme již "
+      },
+      {
+        "type": "span",
+        "text": "dosáhli více než miliardy zhlédnutí. Připojte se k nám a zvedněte svou online prezentaci na novou úroveň!"
+      }
+    ]
   },
   "main_book": {
     "en": "Book a free call",
@@ -34,5 +37,79 @@
   "main_references": {
     "en": "View References",
     "cz": "Prohlédnout reference"
+  },
+  "clients": [
+    {
+      "name": "Jarvis",
+      "tiktok": "3M+",
+      "instagram": "2M+",
+      "youtube": "5M+",
+      "image": "jarvis.png"
+    },
+    {
+      "name": "MrSavage",
+      "tiktok": "3M+",
+      "instagram": "2M+",
+      "youtube": "2M+",
+      "image": "savage.png"
+    },
+    {
+      "name": "Faze Replays",
+      "tiktok": "750K+",
+      "instagram": "500K+",
+      "youtube": "1.3M+",
+      "image": "replays.png"
+    },
+    {
+      "name": "Jon Sandman",
+      "tiktok": "550K+",
+      "instagram": "100K+",
+      "youtube": "1M+",
+      "image": "jon.png"
+    },
+    {
+      "name": "Gamdom",
+      "description": "World's biggest on-line casino",
+      "image": "gamdom.png"
+    },
+    {
+      "name": "Jiri BJP Prochazka",
+      "description": "Former UFC Light Heavyweight Champion",
+      "image": "jiri.png"
+    },
+    {
+      "name": "Milad Mirg",
+      "tiktok": "6.4M+",
+      "youtube": "6.5M+",
+      "image": "milad.png"
+    },
+    {
+      "name": "The MAG",
+      "description": "The biggest video magazine in the Czech Republic",
+      "image": "mag.png"
+    },
+    {
+      "name": "Risa Zelinka",
+      "description": "Czech Scooter Rider",
+      "image": "risa.png"
+    },
+    {
+      "name": "Ninjas In Pyjamas",
+      "description": "One of the biggest gaming organizations",
+      "image": "ninjas.png"
+    },
+    {
+      "name": "Nyhrox",
+      "description": "Fortnite World Cup Winner",
+      "image": "nyhrox.png"
+    }
+  ],
+  "clients_title": {
+    "en": "Trusted by superstars all<br> around the world",
+    "cz": "Spolupracujeme s hvězdami <br> po celém světě"
+  },
+  "clients_highlight": {
+    "en": "Client highlights, contact us for a full client list.",
+    "cz": "Ukázka klientů, kontaktujte nás pro celý seznam klientů."
   }
 }

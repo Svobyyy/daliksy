@@ -1,15 +1,15 @@
-import data from "@/data.json";
+
+import Clients from "@/components/Clients/Clients";
+import Landing from "@/components/Landing/Landing";
 import { notFound } from "next/navigation";
-import Landing from "../components/Landing/Landing";
+
 export default function Page({ params: { language } }) {
-  if (language !== "en" && language !== "cz") {
-    console.log("halo???");
-    notFound();
-  }
+  if (language !== "en" && language !== "cz") notFound();
 
   return (
     <main>
       <Landing language={language} />
+      <Clients language={language} />
     </main>
   );
 }

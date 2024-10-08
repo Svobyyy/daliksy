@@ -35,16 +35,20 @@
   justify-content: center;
   align-items: center;
   gap: 58px;
-  position: relative;
+  width: 100%;
 }
 
 .channel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 43px;
   max-width: 506px;
-  width: 100vw;
   height: 176px;
   border-radius: 24px;
   background: #060606;
@@ -87,17 +91,23 @@
 }
 
 .channel_opacity {
+  visibility: visible;
   filter: blur(1.2px);
   opacity: 20%;
-  bottom: 95px;
-  right: 300px;
   position: absolute;
   z-index: -1;
 }
 
-.channel_opacityfix {
-  top: 110px;
-  left: 206px;
+.channel_top {
+  top: -100px;
+  left: -215px;
+  width: 100vw;
+}
+
+.channel_bottom {
+  top: 105px;
+  left: 230px;
+  width: 100vw;
 }
 
 .next {
@@ -112,6 +122,27 @@
   color: #eff5ff66;
 }
 
+.active {
+  visibility: visible;
+}
+
+.inactive {
+  visibility: hidden;
+}
+
+.clients {
+  flex: 1 1 506px;
+  max-width: 506px;
+  height: 176px;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 617px;
+}
+
 @keyframes moving {
   0% {
     transform: translateY(0px);
@@ -124,7 +155,6 @@
   100% {
     transform: translateY(-15px);
   }
-
 }
 
 @media only screen and (max-width: 1200px) {
@@ -135,25 +165,31 @@
   .reference_main {
     gap: 20px;
   }
+
+  .wrapper {
+    width: 100%;
+    max-width: 579px;
+  }
+
 }
 
 @media only screen and (max-width: 1100px) {
   .reference {
     flex-direction: column;
+    align-items: center;
   }
 
   .reference h3 {
     text-align: center;
   }
 
-  .channel_opacity {
-    right: 5%;
+  .channel_top {
+    left: -20%;
   }
-
-  .channel_opacityfix {
-    left: -5%;
+  
+  .channel_bottom {
+    left: 20%;
   }
-
   .radial {
     width: 100%;
   }
@@ -171,12 +207,26 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+  .clients {
+    max-height: 220px;
+  }
+
+  .channel_top {
+    left: 0%;
+  }
+  
+  .channel_bottom {
+    left: 0%;
+  }
+
   .channel {
     flex-direction: column;
     height: auto;
     gap: 20px;
     text-align: center;
     padding: 20px 0px;
+    max-height: 220px;
   }
 
   .channel img {
@@ -184,14 +234,6 @@
     height: 60px;
   }
 
-  .channel_opacity {
-    bottom: 150px;
-    height: 222px;
-  }
-
-  .channel_opacityfix {
-    top: 150px;
-  }
 
   .reference {
     padding-top: 100px;

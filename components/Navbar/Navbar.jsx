@@ -1,8 +1,11 @@
 import Image from "next/image";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
+import data from "@/data.json";
 
 export default function Navbar({ language }) {
+  const { navbar } = data;
+
   return (
     <header className={styles.header}>
       <Image
@@ -22,7 +25,7 @@ export default function Navbar({ language }) {
       />
 
       <nav className={styles.nav}>
-        <a href="#form">Contact</a>
+        <a href="#form">{navbar[language]}</a>
 
         <div className={styles.language}>
           <p>

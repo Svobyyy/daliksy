@@ -1,8 +1,9 @@
 import styles from "./Landing.module.css";
 import Image from "next/image";
-import data from "@/data.json";
+
 import SchedulePopUp from "./SchedulePopUp";
 import Navbar from "../Navbar/Navbar";
+import data from "@/data.json";
 
 const renderText = (text) => {
   return text.map((item, index) => {
@@ -17,14 +18,14 @@ const renderText = (text) => {
   });
 };
 
-const Landing = ({ language }) => {
-  const { main_text } = data;
+const { main_text, title, main_book, main_references } = data;
 
+const Landing = ({ language }) => {
   return (
     <section className={styles.landing}>
       <SchedulePopUp />
       <Navbar language={language} />
-      <h1>We are DUPSCALED</h1>
+      <h1>{title[language]}</h1>
 
       <p className={styles.main_text}>{renderText(main_text[language])}</p>
 
@@ -34,11 +35,11 @@ const Landing = ({ language }) => {
           href="https://calendly.com/dupscaled/free-meeting"
           target="blank_"
         >
-          Book a free call
+          {main_book[language]}
         </a>
 
         <a className={styles.reference} href="#references">
-          <p>View References</p>
+          <p>{main_references[language]}</p>
           <Image src="/reference.svg" width={8} height={16} alt="arrow icon" />
         </a>
       </div>

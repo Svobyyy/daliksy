@@ -3,7 +3,7 @@
 import styles from "./Form.module.css";
 import Image from "next/image";
 import { useState } from "react";
-import { SendEmail } from "../../../lib/SendEmail";
+import { SendEmail } from "@/lib/sendEmail";
 
 const Form = () => {
   const [disable, setDisable] = useState(false);
