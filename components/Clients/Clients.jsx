@@ -1,20 +1,12 @@
 "use client";
 import data from "@/data.json";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import styles from "./Clients.module.css";
 import Image from "next/image";
 import Client from "./Client";
+import { renderText } from "@/lib/utils";
 
 const { clients, clients_title, clients_highlight } = data;
-
-const renderText = (text) => {
-  return text.split("<br>").map((item, index) => (
-    <Fragment key={index}>
-      {item}
-      {index < text.split("<br>").length - 1 && <br />}
-    </Fragment>
-  ));
-};
 
 const Clients = ({ language }) => {
   const [client, setClient] = useState(0);
@@ -33,6 +25,7 @@ const Clients = ({ language }) => {
                 client={client}
                 key={index}
                 totalClients={clients.length}
+                language={language}
               />
             ))}
           </ul>

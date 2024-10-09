@@ -15,6 +15,11 @@ html {
   overflow-x: hidden;
 }
 
+label,
+button {
+  cursor: pointer;
+}
+
 h1 {
   font-size: 72px;
   letter-spacing: -1.8px;
@@ -115,10 +120,9 @@ input {
   color: inherit;
 }
 
-input[type=text]:focus {
+input[type="text"]:focus {
   border: 1px solid white;
 }
-
 
 label {
   font-family: var(--font-druk);
@@ -187,7 +191,6 @@ footer p {
 }
 
 @media only screen and (max-width: 1100px) {
-
   footer {
     padding-left: 0px;
     align-items: center;
@@ -197,27 +200,20 @@ footer p {
     margin-left: 0px;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, calc(-50% - 120px))
-  } 
-  
+    transform: translate(-50%, calc(-50% - 120px));
+  }
 }
 
 form {
   margin: 0px 20px;
 }
 
-
-
 @media only screen and (max-width: 800px) {
-
   input {
     max-width: 723px;
     width: 90vw;
   }
 }
-
-
-
 
 @media only screen and (max-width: 750px) {
   h1 {

@@ -1,12 +1,15 @@
 import Image from "next/image";
 import styles from "./Clients.module.css";
+import data from "@/data.json";
 
-const Client = ({ clientData, index, client, totalClients }) => {
+const Client = ({ clientData, index, client, totalClients, language }) => {
   const renderFollowers = (platform, label) => {
     return clientData[platform] ? (
       <p key={platform}>
         <b>{clientData[platform]}</b> {label}{" "}
-        {platform !== "youtube" ? "Followers" : "Subscribers"}
+        {platform !== "youtube"
+          ? data.platforms[language].other
+          : data.platforms[language].youtube}
       </p>
     ) : null;
   };

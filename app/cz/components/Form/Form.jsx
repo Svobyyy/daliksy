@@ -19,7 +19,7 @@ const Form = () => {
 
   return (
     <section className={styles.form} id="form">
-      <h3>Spojme se!</h3>
+      <h3></h3>
       <form action={checkForm}>
         <div className={styles.form_upper}>
           <div className={styles.form_input}>
