@@ -2,8 +2,11 @@
 
 import { PopupWidget } from "react-calendly";
 import { useState, useEffect } from "react";
+import data from "@/data.json";
 
-const SchedulePopUp = () => {
+const { popup } = data;
+
+const SchedulePopUp = ({ language }) => {
   const [rootElement, setRootElement] = useState(null);
 
   useEffect(() => {
@@ -17,7 +20,7 @@ const SchedulePopUp = () => {
       <PopupWidget
         url="https://calendly.com/dupscaled/free-meeting"
         rootElement={rootElement}
-        text="Click here to schedule!"
+        text={popup[language]}
         textColor="#ffffff"
         color="#00a2ff"
       />

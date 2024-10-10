@@ -37,7 +37,7 @@ const Client = ({ clientData, index, client, totalClients, language }) => {
       <div className={styles.channel_info}>
         <h4>{clientData.name}</h4>
         {clientData.description ? (
-          <p>{clientData.description}</p>
+          <p>{clientData.description[language]}</p>
         ) : (
           <>
             {renderFollowers("tiktok", "Tiktok")}

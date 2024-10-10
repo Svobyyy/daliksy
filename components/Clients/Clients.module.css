@@ -157,7 +157,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1240px) {
   .reference {
     gap: 60px;
   }
@@ -165,12 +165,14 @@
   .reference_main {
     gap: 20px;
   }
+}
 
+@media only screen and (max-width: 1200px) {
   .wrapper {
     width: 100%;
     max-width: 579px;
+    flex: 1 1 0;
   }
-
 }
 
 @media only screen and (max-width: 1100px) {
@@ -186,7 +188,7 @@
   .channel_top {
     left: -20%;
   }
-  
+
   .channel_bottom {
     left: 20%;
   }
@@ -207,7 +209,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-
   .clients {
     max-height: 220px;
   }
@@ -215,7 +216,7 @@
   .channel_top {
     left: 0%;
   }
-  
+
   .channel_bottom {
     left: 0%;
   }
@@ -233,7 +234,6 @@
     width: 60px;
     height: 60px;
   }
-
 
   .reference {
     padding-top: 100px;

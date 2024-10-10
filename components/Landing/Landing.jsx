@@ -23,7 +23,7 @@ const { main_text, title, main_book, main_references } = data;
 const Landing = ({ language }) => {
   return (
     <section className={styles.landing}>
-      <SchedulePopUp />
+      <SchedulePopUp language={language} />
       <Navbar language={language} />
       <h1>{title[language]}</h1>
 

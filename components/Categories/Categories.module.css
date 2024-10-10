@@ -26,6 +26,10 @@
   border: 1px solid #caecf126;
 }
 
+.card h2 {
+  padding: 0px 20px;
+}
+
 .category:hover .card {
   border: 1px solid transparent;
 }
@@ -99,6 +103,6 @@
 @media only screen and (max-width: 400px) {
   .category h2 {
     font-size: 26px;
-    padding: 0px 3px;
+    padding: 0px 10px;
   }
 }

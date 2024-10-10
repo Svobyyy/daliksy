@@ -69,12 +69,18 @@
     },
     {
       "name": "Gamdom",
-      "description": "World's biggest on-line casino",
+      "description": {
+        "en": "World's biggest on-line casino",
+        "cz": "Největší online kasino na světě"
+      },
       "image": "gamdom.png"
     },
     {
       "name": "Jiri BJP Prochazka",
-      "description": "Former UFC Light Heavyweight Champion",
+      "description": {
+        "en": "Former UFC Light Heavyweight Champion",
+        "cz": "Bývalý šampion UFC v polotěžké váze"
+      },
       "image": "jiri.png"
     },
     {
@@ -85,22 +91,34 @@
     },
     {
       "name": "The MAG",
-      "description": "The biggest video magazine in the Czech Republic",
+      "description": {
+        "en": "The biggest video magazine in the Czech Republic",
+        "cz": "Největší video magazín v České republice"
+      },
       "image": "mag.png"
     },
     {
       "name": "Risa Zelinka",
-      "description": "Czech Scooter Rider",
+      "description": {
+        "en": "Czech Scooter Rider",
+        "cz": "Český jezdec na skútru"
+      },
       "image": "risa.png"
     },
     {
       "name": "Ninjas In Pyjamas",
-      "description": "One of the biggest gaming organizations",
+      "description": {
+        "en": "One of the biggest gaming organizations",
+        "cz": "Jedna z největších herních organizací"
+      },
       "image": "ninjas.png"
     },
     {
       "name": "Nyhrox",
-      "description": "Fortnite World Cup Winner",
+      "description": {
+        "en": "Fortnite World Cup Winner",
+        "cz": "Vítěz Fortnite World Cupu"
+      },
       "image": "nyhrox.png"
     }
   ],
@@ -183,5 +201,9 @@
       "email": "vášemail@gmail.com",
       "message": "Zde napiš svůj dotaz!"
     }
+  },
+  "popup": {
+    "en": "Click here to schedule!",
+    "cz": "Sjednat Schůzku"
   }
 }
