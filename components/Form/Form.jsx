@@ -3,7 +3,7 @@
 import styles from "./Form.module.css";
 import Image from "next/image";
 import { useState } from "react";
-import { sendEmail } from "@/lib/sendEmail";
+import sendEmail from "@/lib/sendEmail";
 import data from "@/data.json";
 import Dots from "./dots";
 
