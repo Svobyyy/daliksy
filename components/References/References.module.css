@@ -1,5 +1,5 @@
 .active {
-  display: flex;
+  display: inline-block;
 }
 
 .unactive {
@@ -12,6 +12,8 @@
   display: inline-block;
   overflow: hidden;
   background: linear-gradient(179.87deg, #000000 40.38%, #00fffc 143.02%);
+  width: 78px;
+  height: 78px;
 }
 
 .img img {
@@ -47,6 +49,7 @@
 }
 
 .reference_profile {
+  display: flex;
   align-items: center;
   gap: 27px;
 }
@@ -63,4 +66,50 @@
   line-height: 25px;
   font-weight: 400;
   color: #00fffc;
+}
+
+.ref_main .reference_text {
+  display: none;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  .reference_text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 851px;
+    width: 100%;
+  }
+
+  .reference_text_wrapper {
+    display: none;
+  }
+
+  .references {
+    justify-content: center;
+    align-items: center;
+    height: 53px;
+    gap: 80px;
+  }
+
+  .references_wrapper {
+    gap: 40px;
+  }
+
+  .ref_main .reference_text {
+    display: inline-block;
+  }
+
+  .reference_profile {
+    justify-content: center;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .reference_profile {
+    flex-direction: column;
+    text-align: center;
+  }
 }

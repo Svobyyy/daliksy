@@ -26,7 +26,7 @@ export default function References({ language }) {
           }
         />
 
-        <ul>
+        <ul className={styles.reference_text_wrapper}>
           {references.map((reference, index) => {
             return (
               <ReferenceProfile

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function NextArrow({ onClickFunction, flip }) {
   return (
     <div
-      className={`${(styles.next, flip && styles.flip)}`}
+      className={`${(styles.next, flip ? styles.flip : "")}`}
       onClick={onClickFunction}
     >
       <Image

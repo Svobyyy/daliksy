@@ -4,4 +4,5 @@
 
 .flip {
   transform: rotateZ(180deg);
+  transform-origin: 50% calc(50% - 2px);
 }
