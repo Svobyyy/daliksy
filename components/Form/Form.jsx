@@ -3,15 +3,13 @@
 import styles from "./Form.module.css";
 import Image from "next/image";
 import { useState } from "react";
-import sendEmail from "@/lib/sendEmail";
 import data from "@/data.json";
 import Dots from "./dots";
+import sendEmail from "@/lib/sendEmail";
 
 const { form_title, form_labels, form_placeholders } = data;
 
 const Form = ({ language }) => {
-
-  console.log(sendEmail)
   const [disable, setDisable] = useState(false);
   const [sent, setSent] = useState(false);
 
