@@ -4,7 +4,7 @@ import styles from "./Form.module.css";
 import Image from "next/image";
 import { useState } from "react";
 import data from "@/data.json";
-import Dots from "./dots";
+import FormDots from "./FormDots";
 import sendEmail from "@/lib/sendEmail";
 
 const { form_title, form_labels, form_placeholders } = data;
@@ -62,7 +62,7 @@ const Form = ({ language }) => {
         </div>
 
         <div className={styles.submit}>
-          <Dots sent={sent} disable={disable} />
+          <FormDots sent={sent} disable={disable} />
 
           <button
             type="submit"
