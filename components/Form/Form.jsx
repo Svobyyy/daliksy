@@ -10,6 +10,8 @@ import Dots from "./dots";
 const { form_title, form_labels, form_placeholders } = data;
 
 const Form = ({ language }) => {
+
+  console.log(sendEmail)
   const [disable, setDisable] = useState(false);
   const [sent, setSent] = useState(false);
 
