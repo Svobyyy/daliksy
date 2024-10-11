@@ -3,7 +3,7 @@
 import styles from "./Form.module.css";
 import Image from "next/image";
 import { useState } from "react";
-import { SendEmail } from "@/lib/sendEmail";
+import { sendEmail } from "@/lib/sendEmail";
 import data from "@/data.json";
 import Dots from "./dots";
 
@@ -16,7 +16,7 @@ const Form = ({ language }) => {
   const checkForm = async (e) => {
     setDisable(true);
 
-    const isError = await SendEmail(e);
+    const isError = await sendEmail(e);
 
     setSent(isError);
   };
