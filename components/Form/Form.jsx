@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import data from "@/data.json";
 import FormDots from "./FormDots";
-import sendEmail from "@/lib/sendEmail";
+import getEmail from "@/lib/getEmail";
 
 const { form_title, form_labels, form_placeholders } = data;
 
@@ -16,7 +16,7 @@ const Form = ({ language }) => {
   const checkForm = async (e) => {
     setDisable(true);
 
-    const isError = await sendEmail(e);
+    const isError = await getEmail(e);
 
     setSent(isError);
   };
