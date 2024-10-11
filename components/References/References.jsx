@@ -60,6 +60,20 @@ export default function References({ language }) {
           );
         })}
       </ul>
+
+      <ul className={styles.reference_text_wrapper_mobile}>
+          {references.map((reference, index) => {
+            return (
+              <ReferenceProfile
+                key={reference.name}
+                index={index}
+                refer={reference}
+                refNumber={refNumber}
+                language={language}
+              />
+            );
+          })}
+        </ul>
     </div>
   );
 }
