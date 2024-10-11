@@ -5,6 +5,7 @@ import styles from "./Clients.module.css";
 import Image from "next/image";
 import Client from "./Client";
 import { renderText } from "@/lib/utils";
+import NextArrow from "../UI/NextArrow";
 
 const { clients, clients_title, clients_highlight } = data;
 
@@ -30,23 +31,11 @@ const Clients = ({ language }) => {
             ))}
           </ul>
 
-          <div
-            className={styles.next}
-            onClick={() => {
-              if (client + 1 === clients.length) {
-                return setClient(0);
-              }
-              setClient(client + 1);
+          <NextArrow
+            onClickFunction={() => {
+              setClient((clientNumber) => (clientNumber + 1) % clients.length);
             }}
-          >
-            <Image
-              className={styles.next}
-              src="/clients.svg"
-              width={53}
-              height={53}
-              alt="Arrow for clients"
-            />
-          </div>
+          />
         </div>
 
         <p className={styles.reference_side}>{clients_highlight[language]}</p>

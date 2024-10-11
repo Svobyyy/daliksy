@@ -38,6 +38,42 @@
     "en": "View References",
     "cz": "Prohlédnout reference"
   },
+  "references": [
+    {
+      "name": "Benjyfishy",
+      "description": {
+        "en": "Professional Valorant Player",
+        "cz": "Profesionální hráč Valorantu"
+      },
+      "img": "benjyfishy.png",
+      "reference": {
+        "en": "Dal has been very professional and has been able to get me great results quickly, he has put in extra effort and is my go-to person for short-form content",
+        "cz": "Dal byl velmi profesionální a dokázal mi rychle dosáhnout skvělých výsledků, vynaložil další úsilí a je mým hlavním člověkem pro krátký obsah"
+      }
+    },
+    {
+      "name": "Benjyy",
+      "description": {
+        "en": "Professional Valorant Player",
+        "cz": "Profesionální hráč Valorantu"
+      },
+      "reference": {
+        "en": "Dalk has been very professional and has been able to get me great results quickly, he has put in extra effort and is my go-to person for short-form content",
+        "cz": "Dalk byl velmi profesionální a dokázal mi rychle dosáhnout skvělých výsledků, vynaložil další úsilí a je mým hlavním člověkem pro krátký obsah"
+      }
+    },
+    {
+      "name": "B",
+      "description": {
+        "en": "Professional Valorant Player",
+        "cz": "Profesionální hráč Valorantu"
+      },
+      "reference": {
+        "en": "alik has been very professional and has been able to get me great results quickly, he has put in extra effort and is my go-to person for short-form content",
+        "cz": "alik byl velmi profesionální a dokázal mi rychle dosáhnout skvělých výsledků, vynaložil další úsilí a je mým hlavním člověkem pro krátký obsah"
+      }
+    }
+  ],
   "clients": [
     {
       "name": "Jarvis",

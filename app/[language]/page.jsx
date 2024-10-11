@@ -3,6 +3,7 @@ import Clients from "@/components/Clients/Clients";
 import Footer from "@/components/Footer/Footer";
 import Form from "@/components/Form/Form";
 import Landing from "@/components/Landing/Landing";
+import References from "@/components/References/References";
 import { notFound } from "next/navigation";
 
 export default function Page({ params: { language } }) {
@@ -11,6 +12,7 @@ export default function Page({ params: { language } }) {
   return (
     <main>
       <Landing language={language} />
+      <References language={language} />
       <Clients language={language} />
       <Categories language={language} />
       <Form language={language} />

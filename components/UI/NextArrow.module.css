@@ -1,0 +1,7 @@
+.next {
+  cursor: pointer;
+}
+
+.flip {
+  transform: rotateZ(180deg);
+}

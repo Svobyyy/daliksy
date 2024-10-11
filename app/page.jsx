@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <main>
       <Landing language="en" />
+      <References language={language} />
       <Clients language="en" />
       <Categories language="en" />
       <Form language="en" />
